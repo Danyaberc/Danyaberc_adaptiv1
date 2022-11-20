@@ -1,0 +1,80 @@
+header{
+	background: linear-gradient( #0404B4 10%, #000000 80%);
+	height: 100px;
+	width: 100%;
+}
+main {
+	width: 1200px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px auto;
+	
+}
+.block1 {
+	width: 190px;
+	height: 640px;
+	background: yellow;
+}
+.block2 {
+	width: 1000px;
+}
+.greyblock {
+	width: 1000px;
+	height: 400px;
+	background: grey;
+}
+.blueblock {
+	display: flex;
+	justify-content: space-between;
+}
+.styleblue {
+	width: 170px;
+	height: 170px;
+	border: 2px solid blue;
+}
+@media only screen and (max-width: 1200px){
+	main {
+		flex-wrap: wrap;
+		width: 768px;
+	}
+	.block1 {
+		width: 768px;
+		height: 100px;
+	}
+	.block2 {
+		width: 768px;
+	}
+	.greyblock {
+		width: 768px;
+	}
+	.styleblue {
+		width: 130px;
+		height: 130px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	main {
+		flex-wrap: wrap;
+		width: 300px;
+	}
+	.block1 {
+		width: 100%;
+		height: 30px;
+	}
+	.block2 {
+		width:300px;
+	}
+	.greyblock {
+		display:none;
+	}
+	.blueblock {
+		flex-wrap: wrap;
+		
+	}
+	.styleblue {
+		width: 140px;
+		height: 100px;
+		margin-bottom: 10px;
+	}
+}
