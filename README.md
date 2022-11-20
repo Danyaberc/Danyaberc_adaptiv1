@@ -1,0 +1,1 @@
+# Danyaberc_adaptiv1
